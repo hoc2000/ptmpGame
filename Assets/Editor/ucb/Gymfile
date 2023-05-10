@@ -1,0 +1,5 @@
+output_name "build"
+configuration "Release"
+clean true
+silent false
+include_symbols false
