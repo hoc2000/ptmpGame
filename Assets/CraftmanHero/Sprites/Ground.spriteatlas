@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ground
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: d0695bbf551b2ce4faa5089cb99b63c7, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: cba329d04c87aec489922dd7334510b8, type: 3}
+  - {fileID: 21300000, guid: 091e93e0dd3210f49be7dfa096d11c73, type: 3}
+  - {fileID: 21300000, guid: 6eb49051662aed24db1e9614b3309b8d, type: 3}
+  - {fileID: 21300000, guid: d410ab81cb18da84eb96adc30453d3b3, type: 3}
+  - {fileID: 21300000, guid: 660d781208750d34ab08d53616c28cc0, type: 3}
+  - {fileID: 21300000, guid: 22b9e732cf7dd18429175ccb289836e5, type: 3}
+  - {fileID: 21300000, guid: 84983242cb8084e819538306149e0c05, type: 3}
+  - {fileID: 21300000, guid: 4225ea62090485845a7de2ac842f8e81, type: 3}
+  - {fileID: 21300000, guid: edcf00d3d3e33f44c931c0f10c756e2b, type: 3}
+  - {fileID: 21300000, guid: 5a50024463b21de4581124c3d19dd0a8, type: 3}
+  - {fileID: 21300000, guid: 7f9a6a94a06341a49bcaed540a4061ab, type: 3}
+  - {fileID: 21300000, guid: f9563235bbd4dcd4abf8a75c97785e9e, type: 3}
+  - {fileID: 21300000, guid: 474287a529cc3f341a88a5f3a74fd378, type: 3}
+  - {fileID: 21300000, guid: a9e10d364c4db004487f08e9d8e2f338, type: 3}
+  - {fileID: 21300000, guid: d2d9aa46de2ce61408565cea7e19c91e, type: 3}
+  - {fileID: 21300000, guid: 7a86b717732560f4783267f71e0635b0, type: 3}
+  - {fileID: 21300000, guid: f01b92674c406b94b81f6838dc74b366, type: 3}
+  - {fileID: 21300000, guid: 622ab97a10ce27e42bdca2f6e6de241f, type: 3}
+  - {fileID: 21300000, guid: 8973f48a4af1d7f4a8f681854323340a, type: 3}
+  - {fileID: 21300000, guid: d793078a2904e414d92e88846d49b202, type: 3}
+  - {fileID: -1895699086, guid: ae2384db63fbd2e4fae8fcad4c418205, type: 3}
+  - {fileID: 834239106, guid: ae2384db63fbd2e4fae8fcad4c418205, type: 3}
+  - {fileID: 1051171480, guid: ae2384db63fbd2e4fae8fcad4c418205, type: 3}
+  - {fileID: 21300000, guid: 03204d2c70b256b41a9fd2447e218e18, type: 3}
+  - {fileID: 21300000, guid: 1a05786cd24bf9741ba001e40e957b20, type: 3}
+  - {fileID: 21300000, guid: 17b410fc2e3aef840874446c1a90185b, type: 3}
+  - {fileID: 21300000, guid: fe41782d53c757b428e13ac6c128a5b7, type: 3}
+  - {fileID: 21300000, guid: ff3cfa2d599b9774abed1e91f901eadc, type: 3}
+  - {fileID: 21300000, guid: 920ad0adbe68f76408edb29cd6a8a5d8, type: 3}
+  - {fileID: 21300000, guid: 0f39d2fdada692743addef63e01df569, type: 3}
+  - {fileID: 21300000, guid: ba717efdb6e7cf043bc372dc47cab5f0, type: 3}
+  - {fileID: 21300000, guid: 8ee08a1eeca64684db431e885ccc3456, type: 3}
+  - {fileID: 21300000, guid: d8b4322e0e3ff2c4c94a5d4096343ecf, type: 3}
+  - {fileID: 21300000, guid: 5e16bf6ec286ced458940c1a7f19026b, type: 3}
+  - {fileID: 21300000, guid: f07aa2fe753a84347a5258f98d7892c8, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - stone2
+  - Sword
+  - smash machine_2
+  - carrot
+  - open_chest
+  - skull
+  - doorrrr
+  - gems
+  - ads
+  - cactus2
+  - board
+  - 1
+  - trap 1
+  - apple
+  - blink
+  - checkpoint
+  - treee
+  - chest
+  - torch
+  - smash machine_3
+  - chong_gai_2_2
+  - chong_gai_2_0
+  - chong_gai_2_1
+  - cactus3
+  - 3
+  - smash_machine_1
+  - cactus1
+  - electric
+  - flower
+  - trap 2
+  - saw blade
+  - mushroom
+  - 2
+  - stone
+  - chong_gai_1
+  m_RenderDataMap: {}
+  m_Tag: Ground
+  m_IsVariant: 0
