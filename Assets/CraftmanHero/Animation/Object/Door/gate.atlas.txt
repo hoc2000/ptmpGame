@@ -1,0 +1,8 @@
+gate.png
+size:714,434
+filter:Linear,Linear
+pma:true
+gate
+bounds:2,2,438,430
+inside
+bounds:442,24,270,408
