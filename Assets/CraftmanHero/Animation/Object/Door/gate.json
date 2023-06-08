@@ -1,0 +1,63 @@
+{
+"skeleton": {
+	"hash": "d+sIxNSSdws",
+	"spine": "4.0.64",
+	"x": -227.4,
+	"y": 0.01,
+	"width": 436.09,
+	"height": 427.97,
+	"images": "./images/",
+	"audio": "G:/cty/CongViec/hero craft aven/asset/gate"
+},
+"bones": [
+	{ "name": "root", "y": 4.06 },
+	{ "name": "bone", "parent": "root", "x": -9.89, "y": 183.81 }
+],
+"slots": [
+	{ "name": "root", "bone": "root", "attachment": "root" },
+	{ "name": "inside2", "bone": "bone", "attachment": "inside2" },
+	{ "name": "gate", "bone": "root", "attachment": "gate" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"gate": {
+				"gate": { "x": -9.35, "y": 209.95, "width": 438, "height": 430 }
+			},
+			"inside2": {
+				"inside2": {
+					"path": "inside",
+					"x": -5.46,
+					"y": 15.13,
+					"scaleX": 2.1577,
+					"scaleY": 1.49,
+					"width": 270,
+					"height": 408
+				}
+			},
+			"root": {
+				"root": {
+					"type": "clipping",
+					"end": "root",
+					"vertexCount": 4,
+					"vertices": [ -227.4, -4.02, 208.65, -4.04, 208.68, 423.93, -227.33, 423.86 ],
+					"color": "ce3a3aff"
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"gate": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "value": 13.33 },
+					{ "time": 10, "value": 733.87 }
+				]
+			}
+		}
+	}
+}
+}

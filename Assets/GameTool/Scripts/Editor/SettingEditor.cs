@@ -1,0 +1,151 @@
+﻿using System;
+using EditorUtils;
+using UnityEditor;
+using UnityEngine;
+
+public class SettingEditor : MetaEditor
+{
+    public SettingEditor()
+    {
+
+    }
+    /// <summary>
+    /// This function is called when the object becomes enabled and active.
+    /// </summary>
+    protected override void OnEnable()
+    {
+        #if UNITY_ANDROID
+        useAdmob = CheckCompileDefine(AdmobKey, BuildTargetGroup.Android);
+        useMax = CheckCompileDefine(MaxKey, BuildTargetGroup.Android);
+        useIAP = CheckCompileDefine(IAPKey, BuildTargetGroup.Android);
+        #elif UNITY_IOS
+        useAdmob = CheckCompileDefine(AdmobKey, BuildTargetGroup.iOS);
+        useMax = CheckCompileDefine(MaxKey, BuildTargetGroup.iOS);
+        useIAP = CheckCompileDefine(IAPKey, BuildTargetGroup.iOS);
+        #endif
+    }
+
+    bool useAdmob, useMax, useIAP;
+    string AdmobKey = "Admob";
+    string MaxKey = "Max";
+    string IAPKey = "IAP";
+
+    public override void OnInspectorGUI()
+    {
+
+        GUILayout.BeginVertical("Box");
+
+        EditorGUILayout.BeginHorizontal();
+        useAdmob = EditorGUILayout.Toggle(useAdmob, GUILayout.Width(20));
+        GUILayout.Label("Use Admob", GUILayout.Width(100));
+        EditorGUILayout.EndHorizontal();
+        EditorGUILayout.BeginHorizontal();
+        useMax = EditorGUILayout.Toggle(useMax, GUILayout.Width(20));
+        GUILayout.Label("Use Max", GUILayout.Width(100));
+        EditorGUILayout.EndHorizontal();
+
+        EditorGUILayout.BeginHorizontal();
+        useIAP = EditorGUILayout.Toggle(useIAP, GUILayout.Width(20));
+        GUILayout.Label("Use IAP", GUILayout.Width(100));
+        EditorGUILayout.EndHorizontal();
+        if (useAdmob)
+        {
+            AddCompileDefine(AdmobKey, new BuildTargetGroup[] { BuildTargetGroup.Android, BuildTargetGroup.iOS });
+        }
+        else
+        {
+            RemoveCompileDefine(AdmobKey, new BuildTargetGroup[] { BuildTargetGroup.Android, BuildTargetGroup.iOS });
+        }
+
+
+        if (useMax)
+        {
+            AddCompileDefine(MaxKey, new BuildTargetGroup[] { BuildTargetGroup.Android, BuildTargetGroup.iOS });
+        }
+        else
+        {
+            RemoveCompileDefine(MaxKey, new BuildTargetGroup[] { BuildTargetGroup.Android, BuildTargetGroup.iOS });
+        }
+
+        if (useIAP)
+        {
+            AddCompileDefine(IAPKey, new BuildTargetGroup[] { BuildTargetGroup.Android, BuildTargetGroup.iOS });
+        }
+        else
+        {
+            RemoveCompileDefine(IAPKey, new BuildTargetGroup[] { BuildTargetGroup.Android, BuildTargetGroup.iOS });
+        }
+        GUILayout.EndVertical();
+    }
+
+
+    bool CheckCompileDefine(string newDefineCompileConstant, BuildTargetGroup grp)
+    {
+        string defines = PlayerSettings.GetScriptingDefineSymbolsForGroup(grp);
+        return defines.Contains(newDefineCompileConstant);
+    }
+
+
+    /// <summary>
+    /// Attempts to add a new #define constant to the Player Settings
+    /// </summary>
+    /// <param name="newDefineCompileConstant">constant to attempt to define</param>
+    /// <param name="targetGroups">platforms to add this for (null will add to all platforms)</param>
+    public static void AddCompileDefine(string newDefineCompileConstant, BuildTargetGroup[] targetGroups = null)
+    {
+        if (targetGroups == null)
+            targetGroups = (BuildTargetGroup[])Enum.GetValues(typeof(BuildTargetGroup));
+
+        foreach (BuildTargetGroup grp in targetGroups)
+        {
+            if (grp == BuildTargetGroup.Unknown)        //the unknown group does not have any constants location
+                continue;
+
+            string defines = PlayerSettings.GetScriptingDefineSymbolsForGroup(grp);
+            if (!defines.Contains(newDefineCompileConstant))
+            {
+                if (defines.Length > 0)         //if the list is empty, we don't need to append a semicolon first
+                    defines += ";";
+
+                defines += newDefineCompileConstant;
+                PlayerSettings.SetScriptingDefineSymbolsForGroup(grp, defines);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Attempts to remove a #define constant from the Player Settings
+    /// </summary>
+    /// <param name="defineCompileConstant"></param>
+    /// <param name="targetGroups"></param>
+    public static void RemoveCompileDefine(string defineCompileConstant, BuildTargetGroup[] targetGroups = null)
+    {
+        if (targetGroups == null)
+            targetGroups = (BuildTargetGroup[])Enum.GetValues(typeof(BuildTargetGroup));
+
+        foreach (BuildTargetGroup grp in targetGroups)
+        {
+            string defines = PlayerSettings.GetScriptingDefineSymbolsForGroup(grp);
+            int index = defines.IndexOf(defineCompileConstant);
+            if (index < 0)
+                continue;           //this target does not contain the define
+            else if (index > 0)
+                index -= 1;         //include the semicolon before the define
+                                    //else we will remove the semicolon after the define
+
+            //Remove the word and it's semicolon, or just the word (if listed last in defines)
+            int lengthToRemove = Math.Min(defineCompileConstant.Length + 1, defines.Length - index);
+
+            //remove the constant and it's associated semicolon (if necessary)
+            defines = defines.Remove(index, lengthToRemove);
+
+            PlayerSettings.SetScriptingDefineSymbolsForGroup(grp, defines);
+        }
+    }
+
+
+    public override UnityEngine.Object FindTarget()
+    {
+        return this;
+    }
+}

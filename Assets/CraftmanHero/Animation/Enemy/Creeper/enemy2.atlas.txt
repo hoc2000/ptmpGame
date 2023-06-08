@@ -1,0 +1,14 @@
+enemy2.png
+size:278,478
+filter:Linear,Linear
+pma:true
+images/L_leg
+bounds:138,156,136,138
+rotate:90
+images/R_leg
+bounds:138,18,136,138
+rotate:90
+images/body
+bounds:2,2,134,290
+images/head
+bounds:2,294,224,182
