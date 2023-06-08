@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d140d8e7e8be4093a85e72e213ac671, type: 3}
+  m_Name: WidogameAppSettings
+  m_EditorClassIdentifier: 
+  AndroidAdmobAppOpenId: ca-app-pub-9082660478786368/7865663212
+  AndroidAdmobBannerId: 
+  AndroidAdmobInterstitialId: 
+  AndroidAdmobRewardedId: 
+  AndroidAdmobRewardedInterstitialId: 
+  IOSAdmobAppOpenId: ca-app-pub-9082660478786368/1504640125
+  IOSAdmobBannerId: 
+  IOSAdmobInterstitialId: 
+  IOSAdmobRewardedId: 
+  IOSAdmobRewardedInterstitialId: 
+  MaxSdkKey: ehSDH0DZmAq1wZ8lg9CArzAulgcEJT2htBR-Krwog96y6qCEtm47gZiVtwGo0q-EdB4Rf6ozX9f0hkFPLJPinv
+  AndroidMaxBannerAdUnit: c830e5d28718e3c6
+  AndroidMaxInterstitialAdUnit: 0c2ee88fb106817b
+  AndroidMaxRewardedAdUnit: 47e50b1182835d7f
+  IOSMaxBannerAdUnit: 56224c8b6e94c3af
+  IOSMaxInterstitialAdUnit: 2ffd696041b139ed
+  IOSMaxRewardedAdUnit: adda0278e3c9701f
+  AndroidIronSourceDevKey: 1706898a5
+  IOSIronSourceDevKey: 17068d22d
