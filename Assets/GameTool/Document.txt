@@ -1,0 +1,27 @@
+
+* Kéo thả folder GameTool vào trong folder Assets của Project
+Tool : Để sử dụng trước tiên hay import các package sau
+
+
+
+1 : Import Firebase donet4 : 
+	+ FirebaseAnalytics
+	+ FirebaseCrashlytics
+	+ FirebaseMessaging
+	+ FirebaseRemoteConfig
+
+2 : Import Unity IAP
+
+3 : Import Google Admod
+
+4 : Trong thư mục AssetStore Import các asset cần thiết
+	+ Nice Vibrations Haptic Feedback for Mobile Gamepads
+	+ DOTween Pro
+	+ Build_Report_Tool
+
+5 : Luôn upadate các package trong Package Manager lên phiên bản mới nhât
+
+6 : Chỉnh
+	+ Project Setting > Player > Other Setting > Scipting Backend => IL2CPP
+	+ Project Setting > Player > Other Setting > Api Compatibility Level => .Net 4.x
+	+ Project Setting > Player > Other Setting > Target Architectures => tích chọn cả 2 ARMv7 và ARM64
