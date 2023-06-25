@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae4cce9cf0d9954b9a5e8dfc92c3a35, type: 3}
+  m_Name: DataHolder
+  m_EditorClassIdentifier: 
+  characters:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 1
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 1
+    _keyValues: 65000000660000006700000068000000690000006a0000006b0000006c0000006d000000
+    _keys: 65000000660000006700000068000000690000006a0000006b0000006c0000006d000000
+    _values:
+    - name: 0/default
+      detail: 0
+      skinName: 0/default
+      animName: win
+      sprite: {fileID: 0}
+    - name: thangbadboy
+      detail: 0
+      skinName: 1/default1
+      animName: win
+      sprite: {fileID: 0}
+    - name: thangchiencho
+      detail: 0
+      skinName: 2/default2
+      animName: win
+      sprite: {fileID: 0}
+    - name: Nhungnoinhieu
+      detail: 0
+      skinName: 3/default3
+      animName: win
+      sprite: {fileID: 0}
+    - name: Tanbeo
+      detail: 0
+      skinName: 4/default4
+      animName: win
+      sprite: {fileID: 0}
+    - name: hungbadboy
+      detail: 0
+      skinName: 5/default5
+      animName: win
+      sprite: {fileID: 0}
+    - name: canoinhieu
+      detail: 0
+      skinName: 6/default6
+      animName: win
+      sprite: {fileID: 0}
+    - name: maytotbung
+      detail: 0
+      skinName: 7/default7
+      animName: win
+      sprite: {fileID: 0}
+    - name: lanxinhdep
+      detail: 0
+      skinName: 8/default8
+      animName: win
+      sprite: {fileID: 0}
+  charactersWithWeapon:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 1
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 1
+    _keyValues: 65000000660000006700000068000000690000006a0000006b0000006c0000006d000000
+    _keys: 65000000660000006700000068000000690000006a0000006b0000006c0000006d000000
+    _values:
+    - name: phungdeptrai
+      detail: 0
+      skinName: 0/sword
+      animName: win
+      sprite: {fileID: 0}
+    - name: thangbadboy
+      detail: 0
+      skinName: 1/sword1
+      animName: win
+      sprite: {fileID: 0}
+    - name: phungdeptrai
+      detail: 0
+      skinName: 2/sword2
+      animName: win
+      sprite: {fileID: 0}
+    - name: phungdeptrai
+      detail: 0
+      skinName: 3/sword3
+      animName: win
+      sprite: {fileID: 0}
+    - name: phungdeptrai
+      detail: 0
+      skinName: 4/sword4
+      animName: win
+      sprite: {fileID: 0}
+    - name: phungdeptrai
+      detail: 0
+      skinName: 5/sword5
+      animName: win
+      sprite: {fileID: 0}
+    - name: phungdeptrai
+      detail: 0
+      skinName: 6/sword6
+      animName: win
+      sprite: {fileID: 0}
+    - name: phungdeptrai
+      detail: 0
+      skinName: 7/sword7
+      animName: win
+      sprite: {fileID: 0}
+    - name: phungdeptrai
+      detail: 0
+      skinName: 8/sword8
+      animName: win
+      sprite: {fileID: 0}
+  defaultResourceTypeSprites:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 0
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 0
+    _keyValues: 02000000040000000e000000
+    _keys: 02000000040000000e000000
+    _values:
+    - {fileID: 21300000, guid: 599e3c37dac1b2d42a201c993002b722, type: 3}
+    - {fileID: 21300000, guid: 805d039195d35f7488226e753af373eb, type: 3}
+    - {fileID: 21300000, guid: 2aad5afdfe5c1ab40ac102092adf0550, type: 3}
+  resourceSpriteListDictionary:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 0
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 0
+    _keyValues: 
+    _keys: 
+    _values: []
